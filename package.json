@@ -1,11 +1,14 @@
 {
   "name": "reduxis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "more controllable management, less noisy for redux actions and reducers",
   "main": "src/reduxis.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel src --out-dir lib"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simongfxu/reduxis.git"
@@ -26,7 +29,9 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
     "babel-eslint": "^7.2.1",
+    "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-0": "^6.22.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^7.1.0",
@@ -34,5 +39,11 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
   }
 }
