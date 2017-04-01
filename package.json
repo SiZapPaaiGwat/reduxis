@@ -1,0 +1,38 @@
+{
+  "name": "reduxis",
+  "version": "1.0.0",
+  "description": "more controllable management, less noisy for redux actions and reducers",
+  "main": "src/reduxis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simongfxu/reduxis.git"
+  },
+  "keywords": [
+    "redux",
+    "reduxis",
+    "reducers",
+    "actions"
+  ],
+  "author": "simonxu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simongfxu/reduxis/issues"
+  },
+  "homepage": "https://github.com/simongfxu/reduxis#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1"
+  }
+}
