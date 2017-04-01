@@ -59,3 +59,12 @@ export default (initialState) => {
   return finalStoreCreator(finalReducer, initialState)
 }
 ```
+
+## Example
+
+```bash
+git clone https://github.com/simongfxu/react-starter-project
+cd react-starter-project
+yarn
+yarn run serve
+```
