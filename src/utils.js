@@ -43,3 +43,12 @@ export function getSelectedStateName (name) {
 export function getActionByPlaceholder (name, placeholder) {
   return `${name}$$${placeholder}`
 }
+
+export function getActionFunction (actions = {}, name, placeholder) {
+  let action = actions[getActionByPlaceholder(name, placeholder)]
+  if (!action) {
+    throw new Error(`Action is not found (name: ${name}, placeholder: ${placeholder})`)
+  }
+
+  return action
+}

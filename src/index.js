@@ -1,8 +1,8 @@
 import Reduxis from './reduxis'
 import Component from './Component'
-import {getActionByPlaceholder} from './utils'
+import {getActionFunction} from './utils'
 
 Reduxis.Component = Component
-Reduxis.getActionByPlaceholder = getActionByPlaceholder
+Reduxis.getActionFunction = getActionFunction
 
 export default Reduxis
