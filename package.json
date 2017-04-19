@@ -1,6 +1,6 @@
 {
   "name": "reduxis",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "more controllable management, less noisy for redux actions and reducers",
   "main": "src/index.js",
   "scripts": {
@@ -45,5 +45,8 @@
       "es2015",
       "stage-0"
     ]
-  }
+  },
+  "prepublish": [
+    "compile"
+  ]
 }
