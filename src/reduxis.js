@@ -97,11 +97,11 @@ export default class Reduxis {
     if (_.isEmpty(initialState)) {
       throw new Error('Config property initialState should not be empty.')
     }
-    if (/^[a-z]+$/.test(placeholder) === false) {
-      throw new Error('Config property placeholder should be a simple word.')
+    if (/^[a-z]+$/i.test(placeholder) === false) {
+      throw new Error(`Config property placeholder(${placeholder}) should be a simple word.`)
     }
     if (placeholder in placeholderInitialState) {
-      throw new Error('Config property placeholder should be an unique string.')
+      throw new Error(`Config property placeholder(${placeholder}) should be an unique string.`)
     }
 
     this.placeholder = placeholder

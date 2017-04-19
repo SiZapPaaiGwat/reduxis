@@ -39,3 +39,7 @@ export function getErrorStateName (name) {
 export function getSelectedStateName (name) {
   return `${name}Selected`
 }
+
+export function getActionByPlaceholder (name, placeholder) {
+  return `${name}$$${placeholder}`
+}

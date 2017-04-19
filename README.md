@@ -39,6 +39,30 @@ reduxis.addAsyncHandler({
 })
 ```
 
+## Components
+
+```js
+let reduxis = new Reduxis.Component({
+  initialState: {
+    mode: 'chart'
+  },
+  placeholders: [
+    'newPlayer',
+    'activePlayer'
+  ]
+})
+
+reduxis.addSyncHandler({
+  actionName: 'switchMode',
+  reducer: function (state) {
+    return {
+      ...state,
+      mode: state.mode === 'chart' ? 'table' : 'chart'
+    }
+  }
+})
+```
+
 ### Assemble in your store and routes
 
 ```js
